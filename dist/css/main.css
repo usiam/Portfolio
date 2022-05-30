@@ -457,7 +457,15 @@ img {
   color: #ffd39a; }
 
 .list-group-item {
-  text-align: center; }
+  text-align: center;
+  border-top: 0 none; }
+
+ul.list-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0.2em;
+  grid-auto-flow: column; }
 
 @media (max-width: 800px) {
   #header-home {
