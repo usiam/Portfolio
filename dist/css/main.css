@@ -458,7 +458,13 @@ img {
 
 .list-group-item {
   text-align: center;
-  border-top: 0 none; }
+  border: 0 none; }
+
+.vl {
+  border-left: 4px solid #373939;
+  height: 300px;
+  left: 50%;
+  top: 0; }
 
 ul.list-group {
   display: grid;
