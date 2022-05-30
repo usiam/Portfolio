@@ -1,0 +1,20 @@
+// Set Text Color
+
+// Function returns but a Mixin is a set of styles
+
+@function set-text-color($bg-color) {
+  @if (lightness($bg-color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Transform mixin
+@mixin transform($property) {
+  transform: $property;
+}
+
+@mixin transition() {
+  transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,19 @@
+// Variables
+
+$website-width: 1280px;
+$main-color: #ffd39a;
+$main-purple: #781c68;
+$secondary-purple: #9a0680;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$medium-color: #ccc;
+$font-stack: 'Dosis', sans-serif;
+$bg-img: url('../img/download.jpeg');
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
